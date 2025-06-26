@@ -30,7 +30,7 @@ public class Class {
 		Select sele = new Select(drop);
 		sele.selectByIndex(2);
 		Thread.sleep(3000);
-		driver.close();
+		//driver.close();
 		
 		
 	}
