@@ -9,8 +9,13 @@ public class AsserClaas {
 	{
 		Assert.assertEquals("guru", "guru");
 		String as="gurw", b="LTI";
-		Assert.assertEquals(as, b);
-		SoftAssert df = new SoftAssert();
+		//Assert.assertEquals(as, b);
+		//SoftAssert df = new SoftAssert();
+		System.out.println("it is testNG1");
+		Assert.assertFalse(false);		
+		System.out.println("it is testNG2");
+		Assert.assertTrue(false);
+		System.out.println("it is testNG3");
 		
 		
 	}
