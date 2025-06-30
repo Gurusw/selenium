@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-28T20:05:51 CST" name="Alerts" finished-at="2025-06-28T20:05:57 CST" duration-ms="5773">
+  <suite started-at="2025-06-30T18:25:11 CST" name="Default suite" finished-at="2025-06-30T18:25:15 CST" duration-ms="4388">
     <groups>
-      <group name="Sanity">
-        <method signature="Alerts.Alertee()[pri:2, instance:TestNGG.Alerts@576d5deb]" name="Alertee" class="TestNGG.Alerts"/>
-        <method signature="Alerts.input()[pri:4, instance:TestNGG.Alerts@576d5deb]" name="input" class="TestNGG.Alerts"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="Alerts.input()[pri:4, instance:TestNGG.Alerts@576d5deb]" name="input" class="TestNGG.Alerts"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-06-28T20:05:51 CST" name="Alerts" finished-at="2025-06-28T20:05:57 CST" duration-ms="5773">
-      <class name="TestNGG.Alerts">
-        <test-method signature="Login()[pri:1, instance:TestNGG.Alerts@576d5deb]" started-at="2025-06-28T20:05:51 CST" name="Login" finished-at="2025-06-28T20:05:54 CST" duration-ms="2421" status="PASS">
+    <test started-at="2025-06-30T18:25:11 CST" name="Default test" finished-at="2025-06-30T18:25:15 CST" duration-ms="4388">
+      <class name="TestNGG_Day1.TakeExtent">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestNGG_Day1.TakeExtent@54c5a2ff]" started-at="2025-06-30T18:25:11 CST" name="login" finished-at="2025-06-30T18:25:15 CST" duration-ms="4193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Alertee()[pri:2, instance:TestNGG.Alerts@576d5deb]" started-at="2025-06-28T20:05:54 CST" name="Alertee" finished-at="2025-06-28T20:05:54 CST" depends-on-methods="TestNGG.Alerts.Login" duration-ms="165" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="name()[pri:0, instance:TestNGG_Day1.TakeExtent@54c5a2ff]" started-at="2025-06-30T18:25:15 CST" name="name" finished-at="2025-06-30T18:25:15 CST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Alertee -->
-        <test-method signature="input()[pri:4, instance:TestNGG.Alerts@576d5deb]" started-at="2025-06-28T20:05:54 CST" name="input" finished-at="2025-06-28T20:05:57 CST" depends-on-methods="TestNGG.Alerts.Login" duration-ms="3125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- input -->
-      </class> <!-- TestNGG.Alerts -->
-    </test> <!-- Alerts -->
-  </suite> <!-- Alerts -->
+        </test-method> <!-- name -->
+      </class> <!-- TestNGG_Day1.TakeExtent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

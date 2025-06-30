@@ -16,7 +16,8 @@ public class AsserClaas {
 		System.out.println("it is testNG2");
 		Assert.assertTrue(false);
 		System.out.println("it is testNG3");
-		
+		Assert.assertEquals(as, "LTI");
+		Assert.assertEquals(b, "LTI");
 		
 	}
 
