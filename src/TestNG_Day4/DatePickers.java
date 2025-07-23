@@ -1,5 +1,7 @@
 package TestNG_Day4;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,9 +40,9 @@ public class DatePickers
 	{
 		driver.findElement(By.xpath("//input[@id='datepicker']")).click();
 	
-	String DesiMonth="December";
+	String DesiMonth="January";
 	String DesiYear="2026";
-	String DesiDate="13";
+	String DesiDate="11";
 	while(true)
 	{
 		String	Month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
@@ -49,9 +51,19 @@ public class DatePickers
 		{
 			break;
 		}
-		/*WebElement NextButton= */driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
+		/*WebElement NextButton= */driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();//This is the X-path for next button
 	}
-	
+	 List<WebElement>    eachDate= driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr//td[@data-handler='selectDay']"));
+	for(WebElement dt:eachDate)
+	{
+		if(
+		dt.getText().equals(DesiDate))
+		{
+			dt.click();
+			break;
+		}
+	}
+	 
 	}
 	
 
